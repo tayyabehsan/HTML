@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--This section is for Meta Data about the Page-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Muhammad Ehsan" />
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to create as I learn"
+    />
+    <title>Lesson-08 HTML</title>
+    <link rel="icon" href="../RESOURCES/images/html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../RESOURCES/style/main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <!--H1 is the largest heading one per page. What is this page about-->
+      <h1>This Lesson is about Creating Tables</h1>
+      <!--hr Semantic meanings: There is topic change-->
+      <nav>
+        <!--Semantic meanings: Grouping of Links-->
+        <ul>
+          <li>
+            <a href="#section01-html">Section 01 Learning HTML</a>
+          </li>
+          <li>
+            <a href="#section02-href">Section 02 Learning Hyperlinks</a>
+          </li>
+          <li>
+            <a href="#section03-inlinelinks">Section 03 Inline Links</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>I'm Ready to Learn HTML</h2>
+      <!--This is a subtopic Semantic Meaning-->
+
+      <!--Anchor Tag-->
+      <!--Absolute Reference when you use exact address-->
+      <a href="https://developer.mozilla.org/">MDN Mozilla Developer Network</a>
+      <!--Relative Reference-->
+      <a href="about.html">About Me</a>
+      <!--Link to Area on Same Page, Shortcuts to Different Areas of Same Page-->
+      <article id="section01-html">
+        <h2>Section 01 Learning HTML Sections with IMAGES</h2>
+        <img
+          src="../RESOURCES/images/html5.png"
+          alt="HTML5 Logo"
+          title="HTML5 Logo Tooltip"
+          width="300"
+          height="300"
+          loading="eager"
+        />
+
+        <figure>
+          <figcaption>An Example of HTML5 Code</figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            This is an example of figure element that is not just related to
+            images.
+          </p>
+        </figure>
+        <section>
+          <h3>1st Section in the Article Semantic Section</h3>
+          <p>Loading Attribute has default value of eager.</p>
+          <p>
+            loading Attribute has other value that is "lazy". This will load the
+            images in fold once you scroll. If you use lazy the information
+            which is in the "fold". The info you have to scroll to see is in the
+            fold.
+          </p>
+        </section>
+        <section>
+          <h3>2nd Section in the Article</h3>
+          <p>Two Clear Sections in the Article</p>
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark>number of hours</mark> I code per day?
+              </summary>
+              <p>
+                I start at <time datetime="16:00">4pm</time> and I code for
+                <time datetime="PT2H">2 hours</time> everyday.
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
+
+      <section id="section02-href">
+        <h2>My Daily Routine in Tables</h2>
+        <br />
+        <table>
+          <caption>
+            Daily Routine
+          </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00"
+                  >11am</time
+                >
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00"
+                  >12pm</time
+                >
+              </td>
+              <td>Eat Lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00"
+                  >5pm</time
+                >
+              </td>
+              <td>Study for other courses</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td colspan="2">Non-Productive Activities</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All other times</td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">This is the Footer of the Table.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="section04-Link"></section>
+    </main>
+
+    <hr />
+    <footer>
+      <nav aria-label="secondary-navigation">
+        <p>
+          &lt;&lt;&lt;&copy;
+          <a href="../about.html"> Muhammad Ehsan </a> &gt;&gt;&gt;
+        </p>
+        <p>
+          <a href="#">Back to Top</a>
+        </p>
+        <p>
+          <a href="/">Back to Home</a>
+        </p>
+      </nav>
+    </footer>
+  </body>
+</html>
